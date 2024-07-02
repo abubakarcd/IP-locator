@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- for location -->
+<div class="location_main_div main2">
+    <div class="location_div ">
+        <h1 class="location_title"> location</h1>
+        <p>Your Location is :</p>
+        <textarea class="txtarea" name="location" id="location"   cols="100" rows="10" disabled><%if(locals.locationvalues){%>
+            Country : <%= locationvalues.country %>
+            Province : <%= locationvalues.province %> 
+            City : <%=locationvalues.city%>
+            Zip : <%= locationvalues.zip %>
+            Latitude : <%= locationvalues.latitude %>
+            Longitude : <%= locationvalues.longitude %>
+            Tinezone : <%= locationvalues.timezone %>
+            <% } %></textarea>
+            <form action="/" >
+                <button class="location_btn_home elementhover" type="submit">Home</button></form>
+    </div>
+    <div class="custom_location_div location_div">
+        <h1 class="custom_location_title"> Custom Location</h1>
+        <p>Enter IP Address to find others location.</p>
+        <form action="/customLocation" method="get">
+            <input  type="text" name="customIp"  id="customIp" placeholder="Enter IP Address" >
+            <button class="location_btn_home elementhover custom_location_btn" type="submit"> Location</button>
+        </form>
+        
+        <textarea class="txtarea" name="custom_location" id="custom_location"   cols="100" rows="10" >     Location : <%if(locals.locationvalues2){%>
+            Country : <%= locationvalues2.country %>
+            Province : <%= locationvalues2.province %> 
+            City : <%=locationvalues2.city%>
+            Zip : <%= locationvalues2.zip %>
+            Latitude : <%= locationvalues2.latitude %>
+            Longitude : <%= locationvalues2.longitude %>
+            Tinezone : <%= locationvalues2.timezone %>
+            <% } %> </textarea>
+    </div>
+</div>
+
+
+</body>
+</html>

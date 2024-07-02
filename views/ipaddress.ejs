@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- For ipaddress -->
+     <div class="mainipaddress">
+<div class="ipaddress_div">
+    <h1 class="ipaddress_title">IP Address</h1>
+    <textarea  name="ipaddress_textarea" id="ipaddress"   cols="50" rows="5" disabled>You IP Address is :  <%if(locals.ipaddress){%>
+
+                    <%=ipaddress%>
+        <% }  %></textarea>
+        <form action="location">
+    <button  class=" elementhover location_btn_home" type="submit">Location</button>
+</form>
+</div>
+</div>
+</body>
+</html>

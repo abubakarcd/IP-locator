@@ -1,0 +1,415 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/bg.jpg");
+  
+    /* animation: colorbg 4s linear ;
+    animation-iteration-count: infinite; */
+    color: white;
+}
+
+.main{
+    
+    display: flex;
+    width: 100%;
+    height: 60%;
+    transition: all 4s ease-in-out ;
+}
+
+.main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   
+    
+}
+.mainipaddress{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+   
+}
+
+@media(min-width:1000px){
+    .main2{
+        height: 40%;
+        width: 60%;
+        animation: main2slide 2s linear ;
+        animation-fill-mode: forwards;
+    }
+    .mainipaddress{
+        height: 40rem;
+    width: 50rem; 
+    animation: main2slide 3s linear ;
+    animation-fill-mode: forwards;
+    }
+    .title_des{
+        width: 85%;
+    height: 60vh;
+    }.maintitle{
+        font-size: 250%;
+    }
+    .buttons{
+        flex-direction: row;
+    }
+    .home_ip_address_btn{
+        width: 20rem;
+        height: 20rem;
+
+    }
+    .home_location_btn{
+        width: 20rem;
+        height: 20rem;
+    }
+    .ipaddress_div{
+    
+        width: 30rem;
+        height: 30rem;
+        margin-top: 0%;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .location_div {
+        width: 30rem;
+        height: 30rem;
+        margin-top: 5%;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .txtarea{
+        width: 25rem;
+    }
+}
+@media(min-width:670px) and (max-width:999px){
+    .main2{
+        width:90% ;
+        height:150vh;
+        animation: main2slide 2s linear ;
+        animation-fill-mode: forwards;
+    }
+    .title_des{
+        width: 85%;
+    height: 60vh;
+    }.maintitle{
+        font-size: 250%;
+    }
+    .mainipaddress{
+        height: 40rem;
+    width: 80%; 
+    animation: main2slidemob2 2s linear ;
+    animation-fill-mode: forwards;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .home_ip_address_btn{
+        width: 20rem;
+        height: 40vh;
+
+    }
+    .home_location_btn{
+        width: 20rem;
+        height: 40vh;
+    }
+    .ipaddress_div{
+    
+        width: 28rem;
+        height: 28rem;
+        margin-top: 0%;
+        font-size: 20px;
+    }
+    .location_div {
+        width: 28rem;
+        height: 28rem;
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    .txtarea{
+        width: 25rem;
+    }
+}
+@media(min-width:1px) and (max-width:669px){
+    .main2{
+        width:100% ;
+        height:100%;
+        animation: main2slidemob 2s linear ;
+        animation-fill-mode: forwards;
+    }
+    .title_des{
+        width: 100%;
+    height: 50vh;
+    }.maintitle{
+        font-size: 150%;
+    }
+    .maindes{
+        font-size: small;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .home_ip_address_btn{
+        width: 17rem;
+        height: 45vh;
+
+    }
+    .home_location_btn{
+        width: 17rem;
+        height: 45vh;
+    }
+    .mainipaddress{
+        height: 40rem;
+        width: 80%; 
+        animation: main2slidemob 2s linear ;
+    animation-fill-mode: forwards;
+    }
+    .ipaddress_div{
+    
+        width: 20rem;
+        height: 20rem;
+        margin-top: 0%;
+        font-size: 10px;
+    }
+    .location_div {
+        width: 20rem;
+        height: 60vh;
+        margin-top: 5%;
+        font-size: 10px;
+    }
+    .txtarea{
+        width: 19rem;
+        height: 8rem;
+    }
+    textarea{
+        width:15rem ;
+    }
+}
+/* div for title home ------------------------------------------------------------------ */
+.title_des{
+    background-color:black;
+    font-family: "Kanit", sans-serif;
+    font-style: oblique;
+    border-radius: 30%;
+    margin-top: 5%;
+    padding: 2% 3% 2% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   animation:bordermoving 4s linear;
+   animation-iteration-count: infinite;
+     
+}
+.maintitle{
+    margin-top: 0;
+    color: aqua;
+    text-shadow: 2px 2px 2px yellow;
+    margin-bottom: 20px;
+    
+}
+.maindes{
+    font-weight:400;
+    
+}
+/* div for buttons home ------------------------------------------------------------------ */
+.buttons{
+   width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 0px;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.home_ip_address_btn{
+
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    animation:bordermoving 4s linear;
+    animation-iteration-count: infinite;
+    font-size: 25px;
+    font-style: oblique;
+    color: rgb(0, 255, 8);
+    text-shadow: 4px 4px 7px yellow;
+    border-radius: 10%;
+    
+}
+.ipaddress_des{
+  width: 15rem;
+  margin-bottom: 3rem;
+  
+}
+.ipaddressbtn_home{
+  width: 10rem;
+  height: 40px;
+  box-shadow: 4px 4px 4px yellow;
+  font-size: 20px;
+  font-style: oblique;
+  border-radius: 10%;
+}
+.home_location_btn{
+    background-color: blueviolet;
+ 
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation:bordermoving 4s linear;
+    animation-iteration-count: infinite;  font-size: 25px;
+    font-style: oblique;
+    font-size: 25px;
+    color: aqua;
+    text-shadow: 4px 4px 7px yellow;
+    border-radius: 10%;
+}
+.location_des{
+    width: 15rem;
+    margin-bottom: 3rem;
+
+    font-style: oblique;
+}
+.location_btn_home{
+    width: 10rem;
+  height: 40px;
+  box-shadow: 4px 4px 4px yellow;
+  font-size: 20px;
+  font-style: oblique;
+  border-radius: 10%;
+}
+/* div for ip address ------------------------------------------------------------------ */
+.ipaddress_div{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation:bordermoving 4s linear;
+    animation-iteration-count: infinite;  
+    font-style: oblique;
+    color: rgb(0, 238, 255);
+    text-shadow: 4px 4px 7px yellow;
+    border-radius: 10%;
+    background-color: rgb(81, 81, 81);
+}
+textarea,input{
+    
+    background-color: aquamarine;
+    font-style: oblique;
+    font-size: 15px;
+    color: rgb(6, 18, 18);
+    text-shadow: 4px 4px 7px yellow;
+    box-shadow: 4px 4px 7px yellow;
+    border-radius: 10%;
+    padding:2% 2% 2% 2%;
+}
+.elementhover:hover{
+    opacity: 0.6;
+}
+/* location div---------------------------------------------------------> */
+.location_div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation:bordermoving 4s linear;
+    animation-iteration-count: infinite;  font-size: 25px;
+    font-style: oblique;
+    color:aqua;
+    text-shadow: 4px 4px 7px yellow;
+    border-radius: 10%;
+    background-color: rgb(81, 81, 81);
+    text-align: center;
+}
+
+.custom_location_div{
+    margin-top: 4%;
+}
+.custom_location_btn{
+    margin-top: 5%;
+}
+@keyframes main2slide {
+    0%{
+        margin-left:0%;
+        opacity:0;
+    }
+    
+    25%{
+        margin-left:5%;
+        opacity:0.3;
+    }
+    50%{
+        margin-left:15%;
+        opacity:0.6;
+    }
+    100%{
+        margin-left: 20%;
+        opacity:1;
+    }
+}
+@keyframes main2slidemob {
+    0%{
+        margin-left:0%;
+        opacity:0;
+    }
+    
+    25%{
+        margin-left:4%;
+        opacity:0.3;
+    }
+    50%{
+        margin-left:6%;
+        opacity:0.6;
+    }
+    100%{
+        margin-left: 8%;
+        opacity:1;
+    }
+}
+@keyframes main2slidemob2 {
+    0%{
+        margin-left:0%;
+        opacity:0;
+    }
+    
+    25%{
+        margin-left:2%;
+        opacity:0.2;
+    }
+    50%{
+        margin-left:4%;
+        opacity:0.6;
+    }
+    100%{
+        margin-left: 5%;
+        opacity:1;
+    }
+}
+@keyframes bordermoving{
+    0%{
+      box-shadow: -6px -6px 3px green;
+    }
+    
+    25%{
+        box-shadow: 6px 6px 3px green;
+    }
+    50%{
+        box-shadow: -6px -6px 3px green;
+    }
+    100%{
+        box-shadow: 5px 5px 3px green;
+    }
+}
